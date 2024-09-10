@@ -53,13 +53,14 @@ with open('raw_text.txt', 'r') as file:
         segment_ids = [0] * len(input_ids)
         input_mask = [1] * len(input_ids)
 
-        test_data ['input_ids'].append(input_ids)
-        test_data ['input_mask'].append(input_mask)
-        test_data ['segment_ids'].append(segment_ids)
+        test_data['input_ids'].append(input_ids)
+        test_data['input_mask'].append(input_mask)
+        test_data['segment_ids'].append(segment_ids)
 
 print(test_data['input_ids'][0])
 print(tokenizer.decode(test_data['input_ids'][0]))
 input_ids, input_mask, segment_ids = slice_sequence(test_data['input_ids'], test_data['input_mask'], test_data['segment_ids'], None, window_size, step_size)
+# print(input_ids)
 
 # test_input_ids, test_input_mask, test_segment_ids = get_data_loader(input_ids, input_mask, segment_ids, None, MAX_SEQ_LENGTH, BATCH_SIZE, shuffle=False)
 test_input_ids = torch.tensor(input_ids, dtype=torch.long)
@@ -69,7 +70,7 @@ outputs = model(test_input_ids, attention_mask=test_input_mask, token_type_ids=t
 
 logits = outputs.logits
 predictions = torch.argmax(logits, dim=1)
-print(predictions)
+# print(predictions)
 
 def convert_line_to_inputs(line, label_type, label2idx, tokenizer, max_seq_length = None):
     """Loads a data file into a list of `InputBatch`s."""
@@ -93,8 +94,21 @@ def convert_line_to_inputs(line, label_type, label2idx, tokenizer, max_seq_lengt
     return input_ids, input_mask, segment_ids, labels
 
 import os
-for token_id, label in zip(input_ids, predictions):
-    file_path = os.path.join('memory storage', idx2label[int(label)] + '.txt')
+# print(len(input_ids, predictions))
+
+output_dict = {'family': '', 'schedule': '', 'finance': '', 'healthcare': '', 'other': ''}
+
+for token_ids, label in zip(input_ids, predictions):
+    mid_word_idx = window_size//2
+    token_id = token_ids[mid_word_idx]
+    # file_path = os.path.join('memory storage', idx2label[int(label)] + '.txt')
     token = tokenizer.decode(token_id)
+    output_dict[idx2label[int(label)]] += ' ' + token + ' '
+
+print(output_dict['family'])
+
+for output_type, txt in output_dict.items():
+    file_path = os.path.join('memory storage', output_type + '.txt')
     with open(file_path, 'w') as file:
-        file.write(token)
+        file.write(txt)
+        file.close()
