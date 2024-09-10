@@ -103,7 +103,7 @@ for token_ids, label in zip(input_ids, predictions):
     token_id = token_ids[mid_word_idx]
     # file_path = os.path.join('memory storage', idx2label[int(label)] + '.txt')
     token = tokenizer.decode(token_id)
-    output_dict[idx2label[int(label)]] += ' ' + token + ' '
+    output_dict[idx2label[int(label)]] += token.replace(" ", "") + ' '
 
 print(output_dict['family'])
 
