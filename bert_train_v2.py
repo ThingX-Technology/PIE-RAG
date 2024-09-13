@@ -198,7 +198,7 @@ def get_data_loader(input_ids, input_mask, segment_ids, labels, max_seq_length, 
         return dataloader
     
 
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 # train_input_ids, train_input_mask, train_segment_ids, train_labels
 # dev_input_ids, dev_input_mask, dev_segment_ids, dev_labels
 
@@ -244,8 +244,8 @@ def evaluate(model, dataloader):
 # training
 from transformers.optimization import AdamW, get_linear_schedule_with_warmup
 GRADIENT_ACCUMULATION_STEPS = 1
-NUM_TRAIN_EPOCHS = 5
-LEARNING_RATE = 5e-5
+NUM_TRAIN_EPOCHS = 10
+LEARNING_RATE = 1e-4
 WARMUP_PROPORTION = 0.1
 MAX_GRAD_NORM = 5
 

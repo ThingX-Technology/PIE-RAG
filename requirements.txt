@@ -1,0 +1,6 @@
+torch
+transformers
+scikit-learn
+numpy
+tqdm
+chromadb
