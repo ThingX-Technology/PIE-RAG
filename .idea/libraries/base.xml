@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/build/intermediates/merged_java_res/debug/base.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

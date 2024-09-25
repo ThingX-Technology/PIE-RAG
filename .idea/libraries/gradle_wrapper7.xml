@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gradle-wrapper7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/bootstrap_builds/sdl2/jni/SDL2_image/external/libavif/android_jni/gradle/wrapper/gradle-wrapper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

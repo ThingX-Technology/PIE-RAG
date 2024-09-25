@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="my-test-package1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/build/other_builds/setuptools/arm64-v8a__ndk_target_21/setuptools/pkg_resources/tests/data/my-test-package-zip/my-test-package.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

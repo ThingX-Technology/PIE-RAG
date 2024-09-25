@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="private.tar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/build/intermediates/compressed_assets/debug/out/assets/private.tar.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

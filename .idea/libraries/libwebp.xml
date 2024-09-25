@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libwebp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/jni/SDL2_image/external/libwebp/swig/libwebp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

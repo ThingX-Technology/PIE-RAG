@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="integration1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/jni/SDL2_image/external/libjxl/third_party/brotli/java/org/brotli/integration/test_corpus.zip!/" />
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/jni/SDL2_image/external/libjxl/third_party/brotli/java/org/brotli/integration/fuzz_data.zip!/" />
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/jni/SDL2_image/external/libjxl/third_party/brotli/java/org/brotli/integration/test_data.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

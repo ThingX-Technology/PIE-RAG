@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/python-for-android/testapps/on_device_unit_tests/test_qt/jar/PySide6/jar/Qt6AndroidBindings.jar!/" />
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/python-for-android/testapps/on_device_unit_tests/test_qt/jar/PySide6/jar/Qt6Android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

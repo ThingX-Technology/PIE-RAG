@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="image-loading1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/buildozer/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a/dists/myapp/_python_bundle__armeabi-v7a/_python_bundle/site-packages/kivy/data/images/image-loading.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

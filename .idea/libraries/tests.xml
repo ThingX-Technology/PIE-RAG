@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tests">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/kivy/kivy/tests/unicode_font.zip!/" />
+      <root url="jar://$PROJECT_DIR$/kivy/kivy/tests/unicode_files.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
